@@ -190,8 +190,9 @@ const autoStart = `
 </CountUp>
 `;
 
+// TODO: Throws error when using start prop
 const delayStart = `
-<CountUp delay={2} end={100} />
+<CountUp start={0} end={21} delay={2} />
 `;
 
 const hook = `
