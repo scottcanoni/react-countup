@@ -131,14 +131,14 @@ describe('CountUp component', () => {
   });
 
   it('renders with delay correctly', () => {
-    const { container } = render(<CountUp delay={1} end={10} />);
+    const { container } = render(<CountUp start={0} delay={1} end={10} />);
 
     expect(container).toMatchSnapshot();
   });
 
   it('renders with delay as a render prop component correctly', () => {
     const { container } = render(
-      <CountUp delay={1} end={10}>
+      <CountUp start={0} delay={1} end={10}>
         {({ countUpRef }) => <div ref={countUpRef} />}
       </CountUp>,
     );

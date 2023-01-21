@@ -53,7 +53,7 @@ describe('useCountUp', () => {
 
   it('renders with delay correctly', async () => {
     const Hook = () => {
-      useCountUp({ delay: 1, duration: 1, end: 10, ref: 'counter' });
+      useCountUp({ start: 0, delay: 1, duration: 1, end: 10, ref: 'counter' });
       return <span id="counter" />;
     };
 
